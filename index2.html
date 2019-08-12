@@ -38,36 +38,32 @@
                 <div class="jumbotron">
                     <h2>CSS Specificity คืออะไร</h2>
                     <p>
-                        Css Specificity คือค่าความสำคัญที่จะเป็นตัวกำหนดให้ browser เลือกใช้ style
+                        &emsp; &emsp;Css Specificity คือค่าความสำคัญที่จะเป็นตัวกำหนดให้ browser เลือกใช้ style
                         ในการแสดงออกมาทางหน้าเว็บ ยิ่ง style นั้นมีความเจาะจงมากเท่าไร ก็ยิ่งมีความสำคัญมากขึ้นเท่านั้น
                         ถ้าเราเข้าใจ Css Specificity ก็จะช่วยให้หน้าเว็บของเราแสดงผลตามที่เราต้องการ
+                        โดยเราสามารถแบ่งออกได้เป็น 3 กลุ่มใหญ่ๆ คือ<br>
+                        &emsp; 1.Type selectors & pseudo-elements <br>
+                        &emsp; 2.Class selectors , attribute selectors และ pseudo classes <br>
+                        &emsp; 3.ID selectors <br>
                     </p>
                     <br>
                     <h2>ประโยชน์ของ Css Specificity</h2>
-                    <p>1.ช่วยให้เราเข้าใจว่าทำไมบางครั้ง stye ที่เราเขียนไม่แสดงผลออกมา <br>
-                        2.ช่วยจัดระเบียบให้กับ css code ของเรา <br>
-                        3.ช่วยให้เราเขียน code น้อยลง และดู clean ขึ้น
-                    </p>
-                    <br>
-                    <h2>หลักการทำงาน</h2>
-                    <p>
-                        โดยเราสามารถแบ่งออกได้เป็น 3 กลุ่มใหญ่ๆ คือ<br>
-                        1.Type selectors & pseudo-elements <br>
-                        2.Class selectors , attribute selectors และ pseudo classes <br>
-                        3.ID selectors <br>
+                    <p> &emsp; 1.ช่วยให้เราเข้าใจว่าทำไมบางครั้ง stye ที่เราเขียนไม่แสดงผลออกมา <br>
+                        &emsp; 2.ช่วยจัดระเบียบให้กับ css code ของเรา <br>
+                        &emsp; 3.ช่วยให้เราเขียน code น้อยลง และดู clean ขึ้น
                     </p>
                     <br>
                     <h2>กฎเพิ่มเติม</h2>
                     <p>
-                        1.Universal selectors, combinators เช่น + , - ไม่มีผลกับ Css Specificity <br>
-                        2.Inline styles ไม่ค่อยเป็นที่นิยมในการเขียน ควรที่จะเขียนใน .css แยกต่างหาก <br>
-                        3.!important ถ้าไม่จำเป็นจริงๆ ไม่ควรใช้เพราะเป็นการบังคับให้ใช้ style นั้น
+                        &emsp; 1.Universal selectors, combinators เช่น + , - ไม่มีผลกับ Css Specificity <br>
+                        &emsp; 2.Inline styles ไม่ค่อยเป็นที่นิยมในการเขียน ควรที่จะเขียนใน .css แยกต่างหาก <br>
+                        &emsp; 3.!important ถ้าไม่จำเป็นจริงๆ ไม่ควรใช้เพราะเป็นการบังคับให้ใช้ style นั้น
                         เมื่อเราเขียนแบบนี้ไปเรื่อยๆอาจทำให้ยากต่อการ debug <br>
                     </p>
                     <br>
                     <h2>การคำนวณ</h2>
                     <img src="./pic/00.png" alt="" width="900px" height="400px">
-                    <p>จากรูปเรากำหนดให้มีค่าเป็น(0 , 0 , 0 ,0) ถ้ามี element ตัวไหนก็ให้แก้ไขค่าจาก 0 --> 1 เช่น
+                    <p>&emsp; จากรูปเรากำหนดให้มีค่าเป็น(0 , 0 , 0 ,0) ถ้ามี element ตัวไหนก็ให้แก้ไขค่าจาก 0 --> 1 เช่น
                         .glass{
                         font-size: 27px;
                         } จะมีค่าเป็น (0 , 0 , 1 , 0) เป็นต้น
