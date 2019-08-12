@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+        integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>My Profile</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e4b381">
+        <a class="navbar-brand" href="index1.html"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">CSS Specificity</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="w3-padding-64">
+        <div class="h_1">
+            <h1 style="padding: 0 480px ">CSS Specificity</h1>
+            <div>
+                <div class="jumbotron">
+                    <h2>CSS Specificity คืออะไร</h2>
+                    <p>
+                        Css Specificity คือค่าความสำคัญที่จะเป็นตัวกำหนดให้ browser เลือกใช้ style
+                        ในการแสดงออกมาทางหน้าเว็บ ยิ่ง style นั้นมีความเจาะจงมากเท่าไร ก็ยิ่งมีความสำคัญมากขึ้นเท่านั้น
+                        ถ้าเราเข้าใจ Css Specificity ก็จะช่วยให้หน้าเว็บของเราแสดงผลตามที่เราต้องการ
+                    </p>
+                    <br>
+                    <h2>ประโยชน์ของ Css Specificity</h2>
+                    <p>1.ช่วยให้เราเข้าใจว่าทำไมบางครั้ง stye ที่เราเขียนไม่แสดงผลออกมา <br>
+                        2.ช่วยจัดระเบียบให้กับ css code ของเรา <br>
+                        3.ช่วยให้เราเขียน code น้อยลง และดู clean ขึ้น
+                    </p>
+                    <br>
+                    <h2>หลักการทำงาน</h2>
+                    <p>
+                        โดยเราสามารถแบ่งออกได้เป็น 3 กลุ่มใหญ่ๆ คือ<br>
+                        1.Type selectors & pseudo-elements <br>
+                        2.Class selectors , attribute selectors และ pseudo classes <br>
+                        3.ID selectors <br>
+                    </p>
+                    <br>
+                    <h2>กฎเพิ่มเติม</h2>
+                    <p>
+                        1.Universal selectors, combinators เช่น + , - ไม่มีผลกับ Css Specificity <br>
+                        2.Inline styles ไม่ค่อยเป็นที่นิยมในการเขียน ควรที่จะเขียนใน .css แยกต่างหาก <br>
+                        3.!important ถ้าไม่จำเป็นจริงๆ ไม่ควรใช้เพราะเป็นการบังคับให้ใช้ style นั้น
+                        เมื่อเราเขียนแบบนี้ไปเรื่อยๆอาจทำให้ยากต่อการ debug <br>
+                    </p>
+                    <br>
+                    <h2>การคำนวณ</h2>
+                    <img src="./pic/00.png" alt="" width="900px" height="400px">
+                    <p>จากรูปเรากำหนดให้มีค่าเป็น(0 , 0 , 0 ,0) ถ้ามี element ตัวไหนก็ให้แก้ไขค่าจาก 0 --> 1 เช่น
+                        .glass{
+                        font-size: 27px;
+                        } จะมีค่าเป็น (0 , 0 , 1 , 0) เป็นต้น
+                    </p>
+                </div>
+                <div>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>
